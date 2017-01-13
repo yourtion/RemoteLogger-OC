@@ -10,6 +10,12 @@
 		CB0442651E23CFE6002BBDB8 /* RemoteLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB04425B1E23CFE6002BBDB8 /* RemoteLogger.framework */; };
 		CB04426A1E23CFE6002BBDB8 /* RemoteLoggerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0442691E23CFE6002BBDB8 /* RemoteLoggerTests.m */; };
 		CB04426C1E23CFE6002BBDB8 /* RemoteLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = CB04425E1E23CFE6002BBDB8 /* RemoteLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB0442FB1E253244002BBDB8 /* CoreWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = CB0442F51E253244002BBDB8 /* CoreWebSocket.h */; };
+		CB0442FC1E253244002BBDB8 /* libCoreWebSocket_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0442F61E253244002BBDB8 /* libCoreWebSocket_iOS.a */; };
+		CB0442FD1E253244002BBDB8 /* WebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = CB0442F71E253244002BBDB8 /* WebSocket.h */; };
+		CB0442FE1E253244002BBDB8 /* WebSocketClient.h in Headers */ = {isa = PBXBuildFile; fileRef = CB0442F81E253244002BBDB8 /* WebSocketClient.h */; };
+		CB0442FF1E253244002BBDB8 /* WebSocketFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = CB0442F91E253244002BBDB8 /* WebSocketFrame.h */; };
+		CB0443001E253244002BBDB8 /* WebSocketTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = CB0442FA1E253244002BBDB8 /* WebSocketTypes.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +35,12 @@
 		CB0442641E23CFE6002BBDB8 /* RemoteLoggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoteLoggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB0442691E23CFE6002BBDB8 /* RemoteLoggerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemoteLoggerTests.m; sourceTree = "<group>"; };
 		CB04426B1E23CFE6002BBDB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB0442F51E253244002BBDB8 /* CoreWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreWebSocket.h; sourceTree = "<group>"; };
+		CB0442F61E253244002BBDB8 /* libCoreWebSocket_iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCoreWebSocket_iOS.a; sourceTree = "<group>"; };
+		CB0442F71E253244002BBDB8 /* WebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocket.h; sourceTree = "<group>"; };
+		CB0442F81E253244002BBDB8 /* WebSocketClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocketClient.h; sourceTree = "<group>"; };
+		CB0442F91E253244002BBDB8 /* WebSocketFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocketFrame.h; sourceTree = "<group>"; };
+		CB0442FA1E253244002BBDB8 /* WebSocketTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocketTypes.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB0442FC1E253244002BBDB8 /* libCoreWebSocket_iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +66,7 @@
 		CB0442511E23CFE6002BBDB8 = {
 			isa = PBXGroup;
 			children = (
+				CB0442F41E253244002BBDB8 /* WebSocket */,
 				CB04425D1E23CFE6002BBDB8 /* RemoteLogger */,
 				CB0442681E23CFE6002BBDB8 /* RemoteLoggerTests */,
 				CB04425C1E23CFE6002BBDB8 /* Products */,
@@ -86,6 +100,20 @@
 			path = RemoteLoggerTests;
 			sourceTree = "<group>";
 		};
+		CB0442F41E253244002BBDB8 /* WebSocket */ = {
+			isa = PBXGroup;
+			children = (
+				CB0442F51E253244002BBDB8 /* CoreWebSocket.h */,
+				CB0442F61E253244002BBDB8 /* libCoreWebSocket_iOS.a */,
+				CB0442F71E253244002BBDB8 /* WebSocket.h */,
+				CB0442F81E253244002BBDB8 /* WebSocketClient.h */,
+				CB0442F91E253244002BBDB8 /* WebSocketFrame.h */,
+				CB0442FA1E253244002BBDB8 /* WebSocketTypes.h */,
+			);
+			name = WebSocket;
+			path = RemoteLogger/WebSocket;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -94,6 +122,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB04426C1E23CFE6002BBDB8 /* RemoteLogger.h in Headers */,
+				CB0442FF1E253244002BBDB8 /* WebSocketFrame.h in Headers */,
+				CB0443001E253244002BBDB8 /* WebSocketTypes.h in Headers */,
+				CB0442FE1E253244002BBDB8 /* WebSocketClient.h in Headers */,
+				CB0442FB1E253244002BBDB8 /* CoreWebSocket.h in Headers */,
+				CB0442FD1E253244002BBDB8 /* WebSocket.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +357,11 @@
 				INFOPLIST_FILE = RemoteLogger/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RemoteLogger/WebSocket",
+				);
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourtion.RemoteLogger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -341,6 +379,11 @@
 				INFOPLIST_FILE = RemoteLogger/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RemoteLogger/WebSocket",
+				);
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourtion.RemoteLogger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -386,6 +429,7 @@
 				CB0442711E23CFE6002BBDB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB0442721E23CFE6002BBDB8 /* Build configuration list for PBXNativeTarget "RemoteLoggerTests" */ = {
 			isa = XCConfigurationList;
@@ -394,6 +438,7 @@
 				CB0442741E23CFE6002BBDB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
