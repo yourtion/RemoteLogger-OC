@@ -16,6 +16,8 @@
 		CB0442FE1E253244002BBDB8 /* WebSocketClient.h in Headers */ = {isa = PBXBuildFile; fileRef = CB0442F81E253244002BBDB8 /* WebSocketClient.h */; };
 		CB0442FF1E253244002BBDB8 /* WebSocketFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = CB0442F91E253244002BBDB8 /* WebSocketFrame.h */; };
 		CB0443001E253244002BBDB8 /* WebSocketTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = CB0442FA1E253244002BBDB8 /* WebSocketTypes.h */; };
+		CB0443031E253263002BBDB8 /* RLServer.h in Headers */ = {isa = PBXBuildFile; fileRef = CB0443011E253263002BBDB8 /* RLServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB0443041E253263002BBDB8 /* RLServer.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0443021E253263002BBDB8 /* RLServer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 		CB0442F81E253244002BBDB8 /* WebSocketClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocketClient.h; sourceTree = "<group>"; };
 		CB0442F91E253244002BBDB8 /* WebSocketFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocketFrame.h; sourceTree = "<group>"; };
 		CB0442FA1E253244002BBDB8 /* WebSocketTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocketTypes.h; sourceTree = "<group>"; };
+		CB0443011E253263002BBDB8 /* RLServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLServer.h; sourceTree = "<group>"; };
+		CB0443021E253263002BBDB8 /* RLServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLServer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 			children = (
 				CB04425E1E23CFE6002BBDB8 /* RemoteLogger.h */,
 				CB04425F1E23CFE6002BBDB8 /* Info.plist */,
+				CB0443011E253263002BBDB8 /* RLServer.h */,
+				CB0443021E253263002BBDB8 /* RLServer.m */,
 			);
 			path = RemoteLogger;
 			sourceTree = "<group>";
@@ -122,6 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB04426C1E23CFE6002BBDB8 /* RemoteLogger.h in Headers */,
+				CB0443031E253263002BBDB8 /* RLServer.h in Headers */,
 				CB0442FF1E253244002BBDB8 /* WebSocketFrame.h in Headers */,
 				CB0443001E253244002BBDB8 /* WebSocketTypes.h in Headers */,
 				CB0442FE1E253244002BBDB8 /* WebSocketClient.h in Headers */,
@@ -228,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB0443041E253263002BBDB8 /* RLServer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
